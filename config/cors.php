@@ -3,7 +3,7 @@
 return [
     'paths' => ['api/*'],
     'allowed_methods' => ['*'],
-    'allowed_origins' => ['*'], // En producción, cambiar a la URL específica del frontend
+    'allowed_origins' => [env('FRONTEND_URL', '*')],
     'allowed_origins_patterns' => [],
     'allowed_headers' => ['*'],
     'exposed_headers' => [],
