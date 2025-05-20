@@ -19,3 +19,5 @@ Route::get('room-types/{roomType}/accommodations', [AccommodationController::cla
 
 // Rutas para habitaciones de hotel
 Route::apiResource('hotel-rooms', HotelRoomController::class);
+
+// Cambio para forzar redeploy
